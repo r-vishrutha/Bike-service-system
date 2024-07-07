@@ -1,0 +1,65 @@
+.home-container{
+    height: 107vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #dcefef;
+}
+
+.home-wrapper h1, .home-wrapper h5{
+    color: #037BFC;
+}
+
+.home-wrapper h5
+{
+    margin-bottom: 50px;
+}
+
+.home-wrapper p{
+    width: 600px;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.offered-services{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.services-box{
+    display: flex;
+    gap: 40px;
+}
+
+.services{
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: grid;
+    place-items: center;
+}
+
+.button{
+    background-color: #037BFC;
+    height: 50px;
+    width: 200px;
+    color: white;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.button:hover{
+    background-color: #076ad4;
+}

@@ -1,0 +1,21 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 107vh;
+    background-color: #dcefef;
+}
+
+.register-wrapper {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    width: 40%;
+    border:2px solid black;
+    border-radius: 20px;
+}
+
+.register-box {
+    margin: 0 auto;
+}
