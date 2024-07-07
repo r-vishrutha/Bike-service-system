@@ -3,7 +3,6 @@ import Home from './Home';
 import Login from './Login';
 import Register from './Register';
 import FirstStep from './FirstStep';
-import States from './States';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
