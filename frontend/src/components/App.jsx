@@ -17,7 +17,6 @@ function App() {
           <Route path="/login" element ={<Login/>} />
           <Route path="/home" element ={<Home/>} />
           <Route path='/firststep' element={<FirstStep/>}/>
-          <Route path='/states' element={<States/>}/>
         </Routes>
       </BrowserRouter>
     </div>

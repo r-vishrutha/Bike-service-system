@@ -19,7 +19,6 @@ const Home = () => {
       </div>
 
       <Link to='/FirstStep' className="button">Service Registration</Link>
-      <Link to='/States' className="button">Service Table</Link>
     </div>
   );
 };
