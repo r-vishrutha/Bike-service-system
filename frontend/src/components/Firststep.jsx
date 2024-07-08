@@ -30,64 +30,61 @@ const FirstStep = () => {
 
     return (
         <div className="first-step-container">
-            <div className="first-step-wrapper">
-                <div className="first-step-box">
-                    <h2 className='mb-3 text-primary'>Register For Service</h2>
-                    <form onSubmit={handleSubmit}>
-                        <div className="mb-3 text-start">
-                            <label htmlFor="exampleInputName" className="form-label">
-                                <strong>Name</strong>
-                            </label>
-                            <input
-                                type="text"
-                                placeholder="Enter Full Name"
-                                className="form-control"
-                                id="exampleInputName"
-                                onChange={(event) => setFullName(event.target.value)}
-                                required
-                            />
-                        </div>
-                        <div className="mb-3 text-start">
-                            <label htmlFor="exampleInputEmail" className="form-label">
-                                <strong>Email</strong>
-                            </label>
-                            <input
-                                type="email"
-                                placeholder="Enter Email"
-                                className="form-control"
-                                id="exampleInputEmail"
-                                onChange={(event) => setEmailid(event.target.value)}
-                                required
-                            />
-                        </div>
-                        <div className="mb-3 text-start">
-                            <label htmlFor="exampleInputModel" className="form-label">
-                                <strong>Bike Model</strong>
-                            </label>
-                            <input
-                                type="text"
-                                placeholder="Enter Bike Model"
-                                className="form-control"
-                                id="exampleInputModel"
-                                onChange={(event) => setModel(event.target.value)}
-                                required
-                            />
-                        </div>
-                        <div className="mb-3 text-start">
-                            <label htmlFor="exampleInputService" className="form-label">
-                                <strong>Service</strong>
-                            </label>
-                            <input
-                                type="text"
-                                placeholder="Enter Service"
-                                className="form-control"
-                                id="exampleInputService"
-                                onChange={(event) => setService(event.target.value)}
-                                required
-                            />
-                        </div>
-                        <button type="submit" className="btn btn-primary">Register</button>
-                    </form>
+            <div className='first-step-deco'></div>
+            <div className='first-step-nondeco'>
+                <div className="first-step-wrapper">
+                    <div className="first-step-box">
+                        <h1>REGISTER FOR SERVICE</h1>
+                        <form onSubmit={handleSubmit} className='first-step-form'>
+                            <div className='form-inputs'>
+                                <div className="input-labels">
+                                    <label htmlFor="exampleInputName" className="">
+                                        <strong>Name</strong>
+                                    </label>
+                                    <label htmlFor="exampleInputEmail" className="">
+                                        <strong>Email</strong>
+                                    </label>
+                                    <label htmlFor="exampleInputModel" className="">
+                                        <strong>Bike Model</strong>
+                                    </label>
+                                    <label htmlFor="exampleInputService" className="">
+                                        <strong>Service</strong>
+                                    </label>
+                                </div>
+                                <div className="inputs">
+                                    <input
+                                        type="text"
+                                        placeholder="Enter Full Name"
+                                        id="exampleInputName"
+                                        onChange={(event) => setFullName(event.target.value)}
+                                        required
+                                    />
+                                    <input
+                                        type="email"
+                                        placeholder="Enter Email"
+                                        id="exampleInputEmail"
+                                        onChange={(event) => setEmailid(event.target.value)}
+                                        required
+                                    />
+                                    <input
+                                        type="text"
+                                        placeholder="Enter Bike Model"
+                                        id="exampleInputModel"
+                                        onChange={(event) => setModel(event.target.value)}
+                                        required
+                                    />
+                                    <input
+                                        type="text"
+                                        placeholder="Enter Service"
+                                        id="exampleInputService"
+                                        onChange={(event) => setService(event.target.value)}
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <button type="submit" className="register-btn">REGISTER</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

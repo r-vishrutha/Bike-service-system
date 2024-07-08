@@ -1,21 +1,112 @@
+*{
+    font-family:'Roboto';
+}
+
 .register-container {
+    display: flex;
+    height: 100vh;
+}
+
+.register-deco{
+    flex: 1;
+    background-image: url('../../public/images/register-page.png');
+    background-repeat: no-repeat;
+    background-size:contain ;
+}
+
+.register-nondeco{
+    /* background-color: bisque; */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 107vh;
-    background-color: #dcefef;
+    flex: 1;
 }
-
 .register-wrapper {
-    background-color: white;
-    padding: 1rem;
-    border-radius: 0.25rem;
-    width: 40%;
-    border:2px solid black;
-    border-radius: 20px;
+    padding: 20px;
+    padding-bottom: 50px;
+    width: 600px;
 }
 
-.register-box {
-    margin: 0 auto;
+.register-box h1{
+    font-size: 50px;
+}
+
+.registration-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.form-inputs{
+    display: flex;
+    gap: 40px;
+}
+
+.input-labels{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.input-labels label{
+    height: 41px;
+    display: grid;
+    place-items: center;
+    justify-content: left;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.inputs input{
+    height: 40px;
+    width: 200px;
+    padding-left: 20px;
+    border: none;
+    background-color: #f1f4f4;
+    border-radius: 10px;
+}
+
+.register-btn{
+    height: 50px;
+    width: 150px;
+    margin-left: 10px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(173, 233, 173);
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.register-btn:hover{
+    background-color: rgb(161, 221, 161);
+}
+
+.login-btn{
+    height: 40px;
+    width: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(183, 225, 241);
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    text-decoration: none;
+}
+
+.login-btn:hover{
+    background-color: rgb(164, 199, 213);
 }

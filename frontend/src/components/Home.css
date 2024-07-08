@@ -1,65 +1,72 @@
+*{
+    font-family: 'Roboto';
+}
+
 .home-container{
-    height: 107vh;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+.home-text{
+    margin-top: 50px;
+    flex: 2;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
     align-items: center;
-    background-color: #dcefef;
-}
-
-.home-wrapper h1, .home-wrapper h5{
-    color: #037BFC;
-}
-
-.home-wrapper h5
-{
-    margin-bottom: 50px;
-}
-
-.home-wrapper p{
-    width: 600px;
-    font-size: 20px;
-    margin-bottom: 50px;
-}
-
-.offered-services{
-    display: flex;
-    justify-content: center;
     text-align: center;
-    align-items: center;
-    gap: 50px;
 }
-
-.services-box{
+.img-container{
+    flex:1;
     display: flex;
-    gap: 40px;
+    background-image: url('../../public/images/home-page.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 200px;
+    margin-top: 15  0px;
 }
 
-.services{
-    font-size: 17px;
-    font-weight: bold;
+.content-wrapper h1{
+    font-size: 50px;
+    color: rgb(106, 200, 238);
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+.content-wrapper h4{
+    width: 450px;
     padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.services-offered{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.book-btn{
+    margin-top: 50px;
+    height: 70px;
+    width: 200px;
+    cursor: pointer;
+    background-color: rgb(106, 200, 238);
+    border: none;
+    border-radius: 20px;
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
     display: grid;
     place-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-.button{
-    background-color: #037BFC;
-    height: 50px;
-    width: 200px;
-    color: white;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.book-link {
     text-decoration: none;
-    border-radius: 10px;
 }
 
-.button:hover{
-    background-color: #076ad4;
-}
