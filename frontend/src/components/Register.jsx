@@ -1,9 +1,10 @@
-// import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
 import { Link } from "react-router-dom";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './Register.css';
+import { SnackbarContent, enqueueSnackbar, useSnackbar } from 'notistack';
+
 
 const Register = () => {
     const [name, setName] = useState();
@@ -18,11 +19,17 @@ const Register = () => {
             .then(result => {
                 console.log(result);
                 if (result.data === "Already registered") {
-                    alert("E-mail already registered! Please Login to proceed.");
+                    enqueueSnackbar('E-mail already registered! Please Login to proceed.', {variant:'success', style: {
+                        backgroundColor: '#7dd3fc',
+                        color: 'black',
+                      }});
                     navigate('/login');
                 }
                 else {
-                    alert("Registered successfully! Please Login to proceed.")
+                    enqueueSnackbar('Registered successfully! Please Login to proceed.', {variant:'success', style: {
+                        backgroundColor: '#6ee7b7',
+                        color: 'black',
+                      }});
                     navigate('/login');
                 }
 

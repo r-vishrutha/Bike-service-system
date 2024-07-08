@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
+import { SnackbarContent, enqueueSnackbar, useSnackbar } from 'notistack';
+
 
 const Login = () => {
     const [email, setEmail] = useState();
@@ -17,10 +19,16 @@ const Login = () => {
                 console.log(result);
                 if (result.data === "Success") {
                     console.log("Login Success");
-                    alert('Login successful!');
+                    enqueueSnackbar('Login successful', {variant:'success', style: {
+                        backgroundColor: '#6ee7b7',
+                        color: 'black',
+                      }});
                     navigate('/home');
                 } else {
-                    alert('Incorrect password! Please try again.');
+                    enqueueSnackbar('Incorrect password! Please try again.', {variant:'success', style: {
+                        backgroundColor: '#dc2626',
+                        color: 'black',
+                      }});
                 }
             })
             .catch(err => console.log(err));

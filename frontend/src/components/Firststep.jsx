@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './FirstStep.css';
+import { SnackbarContent, enqueueSnackbar, useSnackbar } from 'notistack';
 
 const FirstStep = () => {
     const [fullname, setFullName] = useState('');
@@ -17,11 +18,17 @@ const FirstStep = () => {
             .then(result => {
                 console.log(result);
                 if (result.data === "Already registered") {
-                    alert("You are already registered");
+                    enqueueSnackbar('You are already registered', {variant:'success', style: {
+                        backgroundColor: '#7dd3fc',
+                        color: 'black',
+                      }});
                     navigate('/Home');
                 }
                 else {
-                    alert("Registered successfully! ");
+                    enqueueSnackbar('registered successfully', {variant:'success', style: {
+                        backgroundColor: '#6ee7b7',
+                        color: 'black',
+                      }});
                     navigate('/Home');
                 }
             })
